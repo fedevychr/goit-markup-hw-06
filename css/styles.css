@@ -49,11 +49,19 @@ img {
     overflow: hidden;
 }
 
-.container {
+/* .container {
     width: 100%;
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+} */
+
+.container {
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Header */
@@ -223,7 +231,7 @@ img {
 
 .advantages {
     background-color: #ffffff;
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .advantages-title {
@@ -231,15 +239,16 @@ img {
 
 .advantages-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
 }
 
 .advantages-item {
-    width: calc((100% - 24px * 3) / 4);
+    width: 100%;
 }
 
 .advantages-icon {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 112px;
@@ -254,10 +263,11 @@ img {
 
 .advantages-item-title {
     color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     margin-bottom: 8px;
 }
 
@@ -272,7 +282,7 @@ img {
 
 .team {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .team-title {
@@ -287,11 +297,12 @@ img {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap ;
 }
 
 .team-item {
-    width: calc((100% - 24px * 3) / 4);
+    width: 100%;
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -362,7 +373,7 @@ img {
 
 .portfolio {
     background-color: #ffffff;
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .portfolio-title {
@@ -378,12 +389,11 @@ img {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+    gap: 48px;
 }
 
 .portfolio-item {
-    width: calc((100% - 24px * 2) / 3);
+    width: 100%;
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -809,6 +819,90 @@ img {
 .modal-form-btn:hover,
 .modal-form-btn:focus {
     background-color: #404BBF;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .advantages-list {
+        gap: 72px 24px;
+    }
+
+    .advantages-item {
+    width: calc((100% - 24px) / 2);
+    }
+
+    .team-list {
+        gap: 64px 24px;
+    }
+
+    .team-item {
+        width: calc((100% - 64px) / 2);
+    }
+
+    .portfolio-list {
+        gap: 72px 24px;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 72px) / 2);
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .advantages {
+        padding: 120px 0;
+    }
+
+    .advantages-item {
+        width: calc((100% - 24px * 3) / 4);
+    }
+
+    .advantages-icon {
+        display: flex;
+    } 
+    
+    .advantages-item-title {
+        color: #2E2F42;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+    }
+
+    .team {
+        padding: 120px 0;
+    }
+
+    .team-item {
+        width: calc((100% - 24px * 3) / 4);
+    }
+
+    .portfolio {
+        padding: 120px 0;
+    }
+    
+    .portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 24px * 2) / 3);
 }
 
 
