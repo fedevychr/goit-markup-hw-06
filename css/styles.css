@@ -352,6 +352,7 @@ img {
 .advantages-item-text {
     color:  #434455;
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -1041,12 +1042,12 @@ img {
     }
 
     .portfolio-item {
-        width: calc((100% - 72px) / 2);
+        width: calc((100% - 24px) / 2);
     }
     
     .footer-container {
         gap: 72px 24px;
-        padding-left: 108px;
+        padding: 0 108px;
     }
 
     .logo-container {
@@ -1059,7 +1060,7 @@ img {
     }
 
     .social-container {
-        margin-left: 0;
+        margin: 0 auto 0 0;
     }
 
     .social-text {
@@ -1107,6 +1108,11 @@ img {
                         rgba(46, 47, 66, 0.70)),
                         url(../images/hero-bg-2x.jpg);
         }
+    }
+
+    .header-address-list {
+        gap: 40px;
+        flex-direction: row;
     }
     
     .hero-title {
